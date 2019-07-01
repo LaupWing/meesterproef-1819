@@ -5,7 +5,7 @@ In de productbiografie kan je mijn proces vinden voor de meesterproef van de min
 1.  [Inleiding](#inleiding)
 2.  [Leerdoelen](#leerdoelen)
 3.  [Logboek](#logboek)
-3.  [Zeflreflectie](#zelfreflectie)
+4.  [Zeflreflectie](#zelfreflectie)
 
 ## Inleiding
 Voor de meesterproef heb ik mij ingeschreven bij Linernote. Dit project sprak mij aan, omdat het concept voornamlijk rondom het onderwerp muziek en artiesten draaide en zelf luister ik dagelijks muziek onderweg of tijdens het sporten. 
@@ -28,6 +28,7 @@ Uiteindelijk wou Joost van de Linernote website ook een echte app van maken.
 Na de debrieving gehad te hebben van Joost van de Boo ben ik gaan wezen kijken welke leerdoelen het best bij de opdracht passen. De meeste leerdoelen heb ik uit het vak WAFS gehaald, omdat de opdracht zelf gebruik word gemaakt van API's en data manipulatie. Vandaar dat ik voornamelijk mijn leerdoelen uit WAFS heb gehaald.
 
 ### WAFS
+Heel veel punten uit de rubric van WAFS waren van toepassing bij het project bij Linernote. Dit komt omdat voor Linernote het een vereiste is om veel API's te callen, om informatie te halen van artiesten. Wat onze opdrachtgever ook wou is dat het concept van Linernote uiteindelijk een app word. Mijn leerdoel is hierbij ook om de website een app gevoel te geven. Dit probeerde ik te bereiken door de website maar 1 keer te laden en dat de verschillende pagina's worden gerenderd door middel van fetches naar onze server.
 
 #### Punten uit de rubric
 *   `Je hebt, met behulp van een micro library, routes toegepast naar een overzichts- en een detailpagina.`
@@ -36,3 +37,10 @@ Na de debrieving gehad te hebben van Joost van de Boo ben ik gaan wezen kijken w
 *   `Je hebt je verdiept in de API en aan de hand van API docs de op te halen data zo efficient mogelijk opgevraagd`
 *   `Ik heb geen enkele OCD source-formatting neiging als ik naar jouw code kijk. De structuur is volledig duidelijk en logisch opgezet`
 *   `Het is gelukt om, met behulp van een micro library, JSON data te renderen naar HTML`
+
+
+### RTW
+Omdat ik de Linernote website een app-like gevoel wilt geven is het nodig om een open connectie te hebben met de server waardoor ik met gemak data kan opvragen vanuit de server. Ik heb daarom als leerdoelen het volgende uitgekozen uit het vak Real-Time Web.
+
+#### Punten uit de rubric
+*   `Je hebt methodes gecreëerd die clients in staat stelt middels jouw eigen API te communiceren met jouw server. Real time connectiviteit is op een slimme manier opgezet`

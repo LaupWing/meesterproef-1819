@@ -110,9 +110,10 @@ Deze week was er op een maandag een feestdag waardoor we geen feedback moment ha
 
 #### Wat heb ik gedaan?
 *   Samen met May de artiesten pagina gemaakt
+    *   Kleine effecten toegevoegd zoals uitzoom functie in de album carousel
     *   ![comment en like](images/second_prototype.gif)
 *   Verder API's onderzoeken
-*   API's data fetchen en implementeren.
+*   API's data fetchen en implementeren in de frontend.
 
 #### Bevindingen
 *   Samenwerken is moeilijker is dan ik gedacht had.
@@ -122,4 +123,4 @@ Deze week was er op een maandag een feestdag waardoor we geen feedback moment ha
 *   Communicatie en bespreken over hoe en wat
 
 #### Week 4
-Tijdens deze week waren ik en May niet aanwezig bij de feedback momentje met Joost. Zekkie was er wel van ons groepje. Na dit gesprek kwamen we erachter dat de design niet goedgekeurd werd door onze opdrachtgever. De opdrachtgever wou een exacte 1 op 1 kopie van zijn design. Dit zorgde dat het werk wat we de vorige week hadden gemaakt helemaal moesten schrappen.
+Tijdens deze week waren ik en May niet aanwezig bij de feedback momentje met Joost. Zekkie was er wel van ons groepje. Na dit gesprek kwamen we erachter dat de design niet goedgekeurd werd door onze opdrachtgever. De opdrachtgever wou een exacte 1 op 1 kopie van zijn design. Dit zorgde dat het werk wat we de vorige week hadden gemaakt helemaal moesten schrappen. Ook hoorde Zekkie dat het liken en commenten niet meer nodig was en dat ook moest schrappen, en ook dit zorgde ervoor dat we een week aan werk of zelfs meer moesten weggooien. 

@@ -48,9 +48,39 @@ Omdat ik de Linernote website een app-like gevoel wilt geven is het nodig om een
 *   `Je hebt methodes gecreëerd die clients in staat stelt middels jouw eigen API te communiceren met jouw server. Real time connectiviteit is op een slimme manier opgezet`
 
 ## Logboek
+Hier kan je het logboek zien per week wat ik allemaal gedaan heb.
 ### Week 1
 #### Debrief
 Tijdens de debrief werd kregen we te horen waarvoor de applicatie diende en welke api's de opdrachtgever voornamelijk in de applicatie wou zien. 
-In de afbeelding hieronder kan je zien welke api's een must-have zijn en welke api's would-like
+In de afbeelding hieronder kan je zien welke api's een must-have zijn en welke api's would-like.
 ![alt text](images/apis.png)
-In deze eerste week heb ik ook besloten om samen met Zekkie te werken aan de Linernote App.
+
+**Opsomming van Debrief**
+*   Data uit: Instagram, Spotify, Ticketmaster en Youtube is a must
+*   Website word uiteindelijk een app
+
+In deze eerste week heb ik ook besloten om samen met Zekkie te werken aan de Linernote App. 
+We hadden in deze week de afspraak gemaakt dat Zekkie de backend zou maken, zodat mensen kunnen inloggen/account aanmaken en dat gebruikers artiesten kunnen volgen. En ik zou de api's onderzoeken hoe we informatie eruit konden halen. 
+
+#### Wat hebben we gedaan?
+*   Team gemaakt(Zekkie + Loc)
+*   Afspraken gemaakt wie doet wat
+    *   Zekkie maakt de backend
+    *   Loc onderzoekt API's
+*   Gezamelijk repo gemaakt
+
+#### Wat kon beter?
+*   Afspraken noteren en heel duidelijk maken wie wat doet
+
+### Week 2
+#### Debrief
+
+#### Wat hebben we gedaan?
+*   Team gemaakt(Zekkie + Loc)
+*   Afspraken gemaakt wie doet wat
+    *   Zekkie maakt de backend
+    *   Loc onderzoekt API's
+*   Gezamelijk repo gemaakt
+
+#### Wat kon beter?
+*   Afspraken noteren en heel duidelijk maken wie wat doet

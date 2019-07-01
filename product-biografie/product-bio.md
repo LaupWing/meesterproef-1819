@@ -122,10 +122,10 @@ Deze week was er op een maandag een feestdag waardoor we geen feedback moment ha
 #### Wat kon beter?
 *   Communicatie en bespreken over hoe en wat
 
-#### Week 4
+### Week 4
 Tijdens deze week waren ik en May niet aanwezig bij de feedback momentje met Joost. Zekkie was er wel van ons groepje. Na dit gesprek kwamen we erachter dat de design niet goedgekeurd werd door onze opdrachtgever. De opdrachtgever wou een exacte 1 op 1 kopie van zijn design. Dit zorgde dat het werk wat we de vorige week hadden gemaakt helemaal moesten schrappen. Ook hoorde Zekkie dat het liken en commenten niet meer nodig was en dat ook moest schrappen, en ook dit zorgde ervoor dat we een week aan werk of zelfs meer moesten weggooien. 
 
-De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus data hebben van elke artiest was van uiterste belang voor de frontend, maar helaas was Zekkie nog niet klaar met het opslaan van de data van verschillende artiesten. Hierdoor hadden ik en May niet veel te doen tijdens deze week. Ik had toen zelf maar weer geprobeerd om data uit de verschillende API's te halen, zodat wij verder konden gaan. Na een poosje onderzoeken stuitte ik op de MusicBrainz API. Dit was een hele fijne ontdekking, omdat we via de Musicbrainz API makkelijk naar de artiesten hun social media konden navigeren en daar data vandaan halen.
+De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus data hebben van elke artiest was van uiterste belang voor de frontend, maar helaas was Zekkie nog niet klaar met het opslaan van de data van verschillende artiesten. Hierdoor hadden ik en May niet veel te doen tijdens deze week. Ik had toen zelf maar weer geprobeerd om data uit de verschillende API's te halen, zodat wij verder konden gaan. Na een poosje onderzoeken stuitte ik op de MusicBrainz API. Dit was een hele fijne ontdekking, omdat we via de Musicbrainz API makkelijk naar de artiesten hun social media konden navigeren en daar data vandaan konden halen.
 
 #### Wat heb ik gedaan?
 *   API's data fetchen en implementeren in de frontend.
@@ -133,6 +133,7 @@ De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus
 
 #### Bevindingen
 *   MusicBrainz API maakt het makkelijker om de social links te krijgen van Artiesten
+    *   ![comment en like](images/musicbrainz.png)
 *   Design moest exact worden nagemaakt
 *   Like systeem en commenten hoefde niet meer
 

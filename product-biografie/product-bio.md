@@ -69,6 +69,8 @@ Na het onderzoeken van verschillende API's in de eerste week kwamen we er al sne
 *   Api documentatie lezen(Spotify, Instagram, Ticketmaster, Youtube).
 *   Ik ben begonnen met data ophalen van Spotify
 *   Eerste interface versie gemaakt
+    *   [Link Sourcecode](https://github.com/LaupWing/Linernote)
+    *   ![alt text](images/first_prototype.gif)
 *   Eerste documentatie gemaakt 
     *   [Link Readme](https://github.com/LaupWing/Linernote)
 
@@ -83,11 +85,12 @@ Na het onderzoeken van verschillende API's in de eerste week kwamen we er al sne
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 
 ### Week 2
-In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na het laten zien van onze prototypes kwam Joost op het idee om posts te kunnen liken en commenten van de artiesten. Deze like en comment systeem werkt binnen de Linernote app. Dus de likes en comments worden niet naar de platform zelf gepost maar allemaal in de Linernote app zelf. Joost wou ook een wrapper rondom de embedded posts voor styling. 
+In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na het laten zien van onze prototypes kwam Joost op het idee om de posts te kunnen liken en commenten van de artiesten. Deze like en comment systeem werkt binnen de Linernote app. Dus de likes en comments worden niet naar de platform zelf gepost maar allemaal in de Linernote app zelf. Joost wou ook een wrapper rondom de embedded posts voor styling. 
 
 #### Bevindingen
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 
-#### Wat hebben we gedaan?
+#### Wat hebben ik gedaan?
 *   Gekeken of er een wrapper rondom de embeds konden
 *   Alternatieve mogelijkheden bekijken om data uit Instagram te halen
+*   

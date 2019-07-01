@@ -134,6 +134,7 @@ De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus
 #### Bevindingen
 *   MusicBrainz API maakt het makkelijker om de social links te krijgen van Artiesten
     *   ![comment en like](images/musicbrainz.png)
+        *   In elke relation heb je een URL waar we data van konden halen.
 *   Design moest exact worden nagemaakt
 *   Like systeem en commenten hoefde niet meer
 

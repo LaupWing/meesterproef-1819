@@ -106,4 +106,16 @@ In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na 
 *   Beter communiceren, ik vond het namelijk totaal onzin om alle data op te slaan in een database omdat ik het nut ervan niet in zag en totaal niet deel was van de opdracht zelf. Maar ik had niks daar niks over gezegd.
 
 ### Week 3
-De week was er op een maandag een feestdag waardoor we geen feedback moment hadden met Joost. In deze week heb ik samen met May de applicatie interface gemaakt. Tijdens deze week waren en nogal onenigheden binnen ons groepje. Iedereen had een andere idee in zijn/haar gedachten voor dit product. En iedereen voerde maar zijn/haar eigen idee uit.   
+Deze week was er op een maandag een feestdag waardoor we geen feedback moment hadden met Joost. In deze week heb ik samen met May de applicatie interface gemaakt. Tijdens deze week waren en nogal onenigheden binnen ons groepje. Iedereen had een andere idee in zijn/haar gedachten voor dit product. En iedereen voerde maar zijn/haar eigen idee uit. Ik was van mening dat we gewoon de design en concept van onze opdrachtgever maar moeten aanhouden, maar May (met wie ik samen frontend taken had) had een andere mening hierover. Ik ben uiteindelijk maar meegegaan met haar mening en we werkten toen uit wat zij in haar gedachten had hoe dit product zou moeten uitzien.
+
+#### Wat heb ik gedaan?
+*   Samen met May de artiesten pagina gemaakt
+    *   ![comment en like](images/second_prototype.gif)
+*   Verder API's onderzoeken
+
+#### Bevindingen
+*   Samenwerken is moeilijker is dan ik gedacht had.
+*   Iedereen had een andere opinie/idee over dit project
+
+#### Wat kon beter?
+*   Communicatie en bespreken over hoe en wat

@@ -90,11 +90,13 @@ In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na 
 #### Wat hebben ik gedaan?
 *   Gekeken of er een wrapper rondom de embeds konden
 *   Alternatieve mogelijkheden bekijken om data uit Instagram te halen
-*   Opnieuwe server en frontendcode schrijven, zodat May samen met mij kon werken aan de prototype.   
+*   Opnieuwe server en frontendcode geschreven, zodat May samen met mij kon werken aan de prototype.   
 *   Ticketmaster api toegepast
 
 #### Bevindingen
 *   Joost wou een wrapper rondom embedded posts voor styling
+*   Joost wou dat de gebruiker onder elke post kon commenten en liken
+*   May is bij ons in het groepje gekomen
 *   Instagram is mogelijk door scrapen van de shortcodes met puppeteeer(node package)
 *   Zekkie slaat alle data op in zijn eigen backend (Dat had ik niet verwacht)
 

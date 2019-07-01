@@ -46,3 +46,11 @@ Omdat ik de Linernote website een app-like gevoel wilt geven is het nodig om een
 
 #### Punten uit de rubric
 *   `Je hebt methodes gecreëerd die clients in staat stelt middels jouw eigen API te communiceren met jouw server. Real time connectiviteit is op een slimme manier opgezet`
+
+## Logboek
+### Week 1
+#### Debrief
+Tijdens de debrief werd kregen we te horen waarvoor de applicatie diende en welke api's de opdrachtgever voornamelijk in de applicatie wou zien. 
+In de afbeelding hieronder kan je zien welke api's een must-have zijn en welke api's would-like
+![alt text](images/apis.png)
+In deze eerste week heb ik ook besloten om samen met Zekkie te werken aan de Linernote App.

@@ -3,7 +3,7 @@ In de productbiografie kan je mijn proces vinden voor de meesterproef van de min
 
 ## Inhoud
 1.  [Inleiding](#inleiding)
-2.  [Leerdeoel](#leerdoelen)
+2.  [Leerdoelen](#leerdoelen)
 3.  [Logboek](#logboek)
 3.  [Zeflreflectie](#zelfreflectie)
 
@@ -24,3 +24,15 @@ Uiteindelijk wou Joost van de Linernote website ook een echte app van maken.
 *   Uiteindelijk een echte app
 *   Artiesten volgen 
 
+## Leerdoelen
+Na de debrieving gehad te hebben van Joost van de Boo ben ik gaan wezen kijken welke leerdoelen het best bij de opdracht passen. De meeste leerdoelen heb ik uit het vak WAFS gehaald, omdat de opdracht zelf gebruik word gemaakt van API's en data manipulatie. Vandaar dat ik voornamelijk mijn leerdoelen uit WAFS heb gehaald.
+
+### WAFS
+
+#### Punten uit de rubric
+*   `Je hebt, met behulp van een micro library, routes toegepast naar een overzichts- en een detailpagina.`
+*   `De flow is dusdanig gevisualiseerd dat het helemaal helder is hoe de applicatie werkt`
+*   `Je hebt andere slimme methodes gebruikt om JSON data te manipuleren`
+*   `Je hebt je verdiept in de API en aan de hand van API docs de op te halen data zo efficient mogelijk opgevraagd`
+*   `Ik heb geen enkele OCD source-formatting neiging als ik naar jouw code kijk. De structuur is volledig duidelijk en logisch opgezet`
+*   `Het is gelukt om, met behulp van een micro library, JSON data te renderen naar HTML`

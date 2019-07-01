@@ -96,8 +96,9 @@ In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na 
 #### Bevindingen
 *   Joost wou een wrapper rondom embedded posts voor styling
 *   Instagram is mogelijk door scrapen van de shortcodes met puppeteeer(node package)
-*   Zekkie slaat alle data op in zijn eigen backend
+*   Zekkie slaat alle data op in zijn eigen backend (Dat had ik niet verwacht)
 
 #### Wat kon beter?
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 *   Beter communiceren, ik vond het namelijk totaal onzin om alle data op te slaan in een database omdat ik het nut ervan niet in zag. Maar ik had niks gezegd.
+

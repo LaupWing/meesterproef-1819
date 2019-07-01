@@ -50,17 +50,15 @@ Omdat ik de Linernote website een app-like gevoel wilt geven is het nodig om een
 ## Logboek
 Hier kan je het logboek zien per week wat ik allemaal gedaan heb.
 ### Week 1
-#### Debrief
-Tijdens de debrief werd kregen we te horen waarvoor de applicatie diende en welke api's de opdrachtgever voornamelijk in de applicatie wou zien. 
+Onze debrief begon om half 10 in de Volkshotel. Tijdens de debrief werd kregen we te horen waarvoor de applicatie diende en welke api's de opdrachtgever voornamelijk in de applicatie wou zien. 
 In de afbeelding hieronder kan je zien welke api's een must-have zijn en welke api's would-like.
 ![alt text](images/apis.png)
 
-**Opsomming van Debrief**
-*   Data uit: Instagram, Spotify, Ticketmaster en Youtube is a must
-*   Website word uiteindelijk een app
 
 In deze eerste week heb ik ook besloten om samen met Zekkie te werken aan de Linernote App. 
-We hadden in deze week de afspraak gemaakt dat Zekkie de backend zou maken, zodat mensen kunnen inloggen/account aanmaken en dat gebruikers artiesten kunnen volgen. En ik zou de api's onderzoeken hoe we informatie eruit konden halen. 
+We hadden in deze week de afspraak gemaakt dat Zekkie de backend zou maken, zodat mensen kunnen inloggen/account aanmaken en dat gebruikers artiesten kunnen volgen. En ik zou de api's onderzoeken hoe we informatie eruit konden halen.
+
+Na het onderzoeken van verschillende API's in de eerste week kwamen we er al snel achter dat de instagram api niet meer beschikbaar was voor openbaar gebruik en dat de meeste api's in onze must-have list een bepaalde authenticatie voor nodig was(ook wel OAUTH genoemd). Dit zorgt ervoor dat als de gebruiker op de Linernote app wilt komen eerst meerdere keren moet inloggen voordat hij/zij op de Linernote app zelf kwam.
 
 #### Wat hebben we gedaan?
 *   Team gemaakt(Zekkie + Loc)
@@ -69,11 +67,17 @@ We hadden in deze week de afspraak gemaakt dat Zekkie de backend zou maken, zoda
     *   Loc onderzoekt API's
 *   Gezamelijk repo gemaakt
 
+#### Bevindingen
+*   Data uit: Instagram, Spotify, Ticketmaster en Youtube is a must (Debrief)
+*   Website word uiteindelijk een app (Debrief)
+*   Instagram API niet beschikbaar (API onderzoek)
+*   Spotify, Youtube is inloggen een vereiste (API onderzoek)
+
 #### Wat kon beter?
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 
 ### Week 2
-#### Debrief
+In week 2 hadden we geen feedback gesprek, omdat de mensen bij de Linernote een week eerder begon. Tijdens deze week heb ik verder gekeken naar de verschillende API's. 
 
 #### Wat hebben we gedaan?
 *   Team gemaakt(Zekkie + Loc)

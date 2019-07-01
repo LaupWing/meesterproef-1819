@@ -140,3 +140,5 @@ De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus
 
 #### Wat kon beter?
 *   Wederom communcatie problemen
+
+### Week 5

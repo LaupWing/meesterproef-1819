@@ -82,7 +82,7 @@ Na het onderzoeken van verschillende API's in de eerste week kwamen we er al sne
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 
 ### Week 2
-In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na het laten zien van onze prototypes kwam Joost op het idee om posts te kunnen liken en commenten van de artiesten. Deze like en comment systeem werkt binnen de Linernote app. Dus de likes en comments worden niet naar de platform zelf gepost. 
+In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na het laten zien van onze prototypes kwam Joost op het idee om posts te kunnen liken en commenten van de artiesten. Deze like en comment systeem werkt binnen de Linernote app. Dus de likes en comments worden niet naar de platform zelf gepost maar allemaal in de Linernote app zelf. 
 
 #### Wat hebben we gedaan?
 *   Gekeken of er een wrapper rondom de embeds konden

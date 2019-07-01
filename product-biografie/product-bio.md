@@ -70,7 +70,7 @@ Na het onderzoeken van verschillende API's in de eerste week kwamen we er al sne
 *   Ik ben begonnen met data ophalen van Spotify
 *   Eerste interface versie gemaakt
 *   Eerste documentatie gemaakt 
-    *   Link [Link Readme](https://github.com/LaupWing/Linernote)
+    *   [Link Readme](https://github.com/LaupWing/Linernote)
 
 #### Bevindingen
 *   Data uit: Instagram, Spotify, Ticketmaster en Youtube is a must (Debrief)

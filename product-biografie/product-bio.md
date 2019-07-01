@@ -12,8 +12,8 @@ Voor de meesterproef heb ik mij ingeschreven bij Linernote. Dit project sprak mi
 
 Tijdens deze meesterproef heb ik samengewerkt met May en Zekkie. En onze opdrachtgever was Joost van de Boo.
 
-<!-- <img src="./images/Linernote_Logo_White.png"> -->
-![alt text](http://url/to/img.png)
+<!-- <img src="images/Linernote_Logo_White.png"> -->
+![alt text](images/Linernote_Logo_White.png)
 
 ### De opdracht
 De bedoeling van  de opdracht is om een website te maken waar alle social media van je favoriete artiesten worden gebundeld en weergeven om 1 platform namelijk de Linernote website. Gebruikers kunnen artiesten volgen en van die artiesten worden dan de posts in de homepagina weergeven.  

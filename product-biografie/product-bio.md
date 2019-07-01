@@ -106,12 +106,13 @@ In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na 
 *   Beter communiceren, ik vond het namelijk totaal onzin om alle data op te slaan in een database omdat ik het nut ervan niet in zag en totaal niet deel was van de opdracht zelf. Maar ik had niks daar niks over gezegd.
 
 ### Week 3
-Deze week was er op een maandag een feestdag waardoor we geen feedback moment hadden met Joost. In deze week heb ik samen met May de applicatie interface gemaakt. Tijdens deze week waren en nogal onenigheden binnen ons groepje. Iedereen had een andere idee in zijn/haar gedachten voor dit product. En iedereen voerde maar zijn/haar eigen idee uit. Ik was van mening dat we gewoon de design en concept van onze opdrachtgever maar moeten aanhouden, maar May (met wie ik samen frontend taken had) had een andere mening hierover. Ik ben uiteindelijk maar meegegaan met haar mening en we werkten toen uit wat zij in haar gedachten had hoe dit product zou moeten uitzien.
+Deze week was er op een maandag een feestdag waardoor we geen feedback moment hadden met Joost. In deze week heb ik samen met May de applicatie interface gemaakt. Tijdens deze week waren en nogal onenigheden binnen ons groepje. Iedereen had een andere idee in zijn/haar gedachten voor dit product. En iedereen voerde maar zijn/haar eigen idee uit. Ik was van mening dat we gewoon de design en concept van onze opdrachtgever maar moeten aanhouden, maar May (met wie ik samen frontend taken had) had een andere mening hierover. Ik ben uiteindelijk maar meegegaan met haar mening en we werkten toen uit wat zij in haar gedachten had hoe dit product zou moeten uitzien. Verder was de database waar alle posts in worden opgeslagen bij lange na nog niet klaar, dus hadden we geen data om de homepagina te renderen. Ik besloot toen om zelf via de server api calls te maken om deze data toch te verkrijgen.
 
 #### Wat heb ik gedaan?
 *   Samen met May de artiesten pagina gemaakt
     *   ![comment en like](images/second_prototype.gif)
 *   Verder API's onderzoeken
+*   API's data fetchen en implementeren.
 
 #### Bevindingen
 *   Samenwerken is moeilijker is dan ik gedacht had.
@@ -119,3 +120,6 @@ Deze week was er op een maandag een feestdag waardoor we geen feedback moment ha
 
 #### Wat kon beter?
 *   Communicatie en bespreken over hoe en wat
+
+#### Week 4
+Tijdens deze week waren ik en May niet aanwezig bij de feedback momentje met Joost. Zekkie was er wel van ons groepje. Na dit gesprek kwamen we erachter dat de design niet goedgekeurd werd door onze opdrachtgever. De opdrachtgever wou een exacte 1 op 1 kopie van zijn design. Dit zorgde dat het werk wat we de vorige week hadden gemaakt helemaal moesten schrappen.

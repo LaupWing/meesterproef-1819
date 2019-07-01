@@ -60,12 +60,17 @@ We hadden in deze week de afspraak gemaakt dat Zekkie de backend zou maken, zoda
 
 Na het onderzoeken van verschillende API's in de eerste week kwamen we er al snel achter dat de instagram api niet meer beschikbaar was voor openbaar gebruik en dat de meeste api's in onze must-have list een bepaalde authenticatie voor nodig was(ook wel OAUTH genoemd). Dit zorgt ervoor dat als de gebruiker op de Linernote app wilt komen eerst meerdere keren moet inloggen voordat hij/zij op de Linernote app zelf kwam.
 
-#### Wat hebben we gedaan?
+#### Wat heb ik gedaan?
 *   Team gemaakt(Zekkie + Loc)
 *   Afspraken gemaakt wie doet wat
     *   Zekkie maakt de backend
-    *   Loc onderzoekt API's
+    *   Ik onderzoek API's
 *   Gezamelijk repo gemaakt
+*   Api documentatie lezen(Spotify, Instagram, Ticketmaster, Youtube).
+*   Ik ben begonnen met data ophalen van Spotify
+*   Eerste interface versie gemaakt
+*   Eerste documentatie gemaakt 
+    *   Link [Link Readme](https://github.com/LaupWing/Linernote)
 
 #### Bevindingen
 *   Data uit: Instagram, Spotify, Ticketmaster en Youtube is a must (Debrief)
@@ -77,14 +82,11 @@ Na het onderzoeken van verschillende API's in de eerste week kwamen we er al sne
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 
 ### Week 2
-In week 2 hadden we geen feedback gesprek, omdat de mensen bij de Linernote een week eerder begon. Tijdens deze week heb ik verder gekeken naar de verschillende API's. 
+In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na het laten zien van onze prototypes kwam Joost op het idee om posts te kunnen liken en commenten van de artiesten. Deze like en comment systeem werkt binnen de Linernote app. Dus de likes en comments worden niet naar de platform zelf gepost. 
 
 #### Wat hebben we gedaan?
-*   Team gemaakt(Zekkie + Loc)
-*   Afspraken gemaakt wie doet wat
-    *   Zekkie maakt de backend
-    *   Loc onderzoekt API's
-*   Gezamelijk repo gemaakt
+*   Gekeken of er een wrapper rondom de embeds konden
+*   Alternatieve mogelijkheden bekijken om data uit Instagram te halen
 
 #### Wat kon beter?
 *   Afspraken noteren en heel duidelijk maken wie wat doet

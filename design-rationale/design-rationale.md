@@ -62,14 +62,16 @@ Beschikbare Social Media Platforms in Linernote App:
 ### Werking
 1.  Het eerst wat de gebruiker ziet is een inlog scherm. De gebruiker dient eerst in te loggin via zijn/haar spotify account. Hierdoor krijgt Linernote app toestemming om de data te gebruiken van de gebruiker om de beste Linernote ervaring aan te bieden.
 <p align="center">
-<img src="images/werking_1gif"/>
+<img src="images/werking_1.gif"/>
 </p>
 2.  In de Zero State krijgt de gebruiker geen posts te zien. De gebruiker moet eerst een artiest gaan volgen om posts te laten weergeven in de homescreen. Dit kan gedaan worden door of op het plusje te klikken en dan artiest naam invullen of via de navigatie onderin op het vergrootglas te klikken en dan artiest naam invullen.
 *   Plusje
+
     <p align="center">
     <img src="images/werking_2_1.gif"/>
     </p>
 *   Vergrootglas
+
     <p align="center">
     <img src="images/werking_2_2.gif"/>
     </p>

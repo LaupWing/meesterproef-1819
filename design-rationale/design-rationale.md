@@ -65,6 +65,7 @@ Beschikbare Social Media Platforms in Linernote App:
 <img src="images/werking_1.gif"/>
 </p>
 2.  In de Zero State krijgt de gebruiker geen posts te zien. De gebruiker moet eerst een artiest gaan volgen om posts te laten weergeven in de homescreen. Dit kan gedaan worden door of op het plusje te klikken en dan artiest naam invullen of via de navigatie onderin op het vergrootglas te klikken en dan artiest naam invullen.
+
 *   Plusje
     <p align="center">
     <img src="images/werking_2_1.gif"/>
@@ -87,21 +88,27 @@ Beschikbare Social Media Platforms in Linernote App:
 <p align="center">
 <img src="images/werking_5.gif"/>
 </p>
+
 ### User Scenario
 De applicatie is voor alsnog alleen gericht op mobiele gebruikers. De context waarin deze mensen specifiek Linernote zullen gebruiken is hierdoor lastig te bepalen. Het kan onderweg zijn of tijdens het wachten. Het zou ook kunnen helpen met inspiratie opdoen. 
 
 
 ## Design keuzes
-Er zijn tijdens dit process binnen het project enkele design keuzes gemaakt die in het eerdere design (nog) niet waren meegenomen.
+Er zijn tijdens dit process binnen het project enkele design keuzes gemaakt die in het eerdere design (nog) niet waren meegenomen. De Design keuzes zijn onderverdeeld in de werking en de styling.
+### Werking product
+Voor de werking van het product hebben wij de volgende keuzes gemaakt:
+
 - `Inloggen met Spotify` (Oauth) -> Er is gekozen om gebruikers van de Linernote applicatie in te laten loggen met Spotify
 
 - `Het gebruik van embeds en iframes` -> Wegens problemen met missende API's en andere complicaties is er gekozen om te werken met embeds en mogelijke iframes. Dit komt mede door de regelementen van enkele bronnen.
 
-Binnen ons project hebben we nog enkele andere design keuzes gemaakt
+- `Database` -> Wij hebben ervoor gekozen om de data te 'scrapen' en/of op te halen uit de API's en deze vervolgens op te slaan in een database, Zodat de wachttijd drastische werd verminderd.
 
-- `Database` -> Wij hebben ervoor gekozen om de data te 'scrapen' en/of op te halen uit de API's en deze vervolgens op te slaan in een database.
+- `Single page application` & `PWA` -> Het eindproduct is een single page-, progressive web application. Dit zorgde ervoor dat de transitie's tussen verschillende pagina's soepeler ging. Waardoor de website een meer app-like gevoel kreeg, want de opdrachtgever wou er uiteindelijk een App van maken.
 
-- `Single page application` & `PWA` -> Het eindproduct is een single page-, progressive web application.
+### Styling product
+Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project.
+
 
 ## Database
 ### Waarom?

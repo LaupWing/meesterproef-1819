@@ -1,16 +1,10 @@
 # Linernote Design rationale
 
-## Samenvatting
-Linernote is een media platform met content van Instagram, Twitter, YouTube, Spotify en WikiPedia over verschillende artiesten. De data wordt opgehaald uit de API's en opgeslagen in een eigen database. Gebruikers loggen in door middel van Spotify.
-
-> **liner note**   
-> *noun*   
-> " the text printed on a paper insert issued as part of the packaging of a CD or on the sleeve of a record. "
-
 ## Inhoud
 - [Debriefing](#Debriefing)
-  - [Wat is Linernote?](#Wat-is-Linernote?)
-- [Het probleem](#Het-probleem)
+    - [Wat is Linernote?](#Wat-is-Linernote?)
+    - [Het probleem](#Het-probleem)
+    - [Doelgroep](#Doelgroep)
 - [Context](#Context)
   - [Users](#Users)
 - [Design keuzes](#Design-keuzes)
@@ -22,11 +16,16 @@ Linernote is een media platform met content van Instagram, Twitter, YouTube, Spo
 Het concept "Linernote" is bedacht door [Joost de Boo](http://www.joostdeboo.nl/). Joost is een grafisch ontwerper en werkte bij een platenlabel toen het idee voor Linernote ontstond. De Linernote app moet zowel een muzikale- als een visuele ervaring worden.
 
 ### Wat is Linernote?
+Linernote is een media platform met content van Instagram, Twitter, YouTube, Spotify en WikiPedia over verschillende artiesten. De data wordt opgehaald uit de API's en opgeslagen in een eigen database. Gebruikers loggen in door middel van Spotify.
 Linernote is een app waarin alle muziek gerelateerde applicaties en social media samenkomen. Het idee is om de beste features en content van deze apps samen te brengen en het zo voor (online) muziek liefhebbers makkelijker te maken om alle online content van artiesten te bekijken.
 
 `Content van artiesten` + `achtergrond informatie` + `evenementen`
 
-## Het probleem
+> **liner note**   
+> *noun*   
+> " the text printed on a paper insert issued as part of the packaging of a CD or on the sleeve of a record. "
+
+### Het probleem
 > "Het is niet gemakkelijk om online muziekfan te zijn"
 
 Het is begrijpelijk dat muziekliefhebbers soms niet weten waar ze het moeten zoeken. Op internet zijn talloze platformen te vinden die op een of andere manier met muziek te maken hebben. Een belangerijke bevinding is dat er 3 verschillende muziekliefhebbers zijn.
@@ -36,6 +35,15 @@ Het is begrijpelijk dat muziekliefhebbers soms niet weten waar ze het moeten zoe
 2. `product` -> Deze groep mensen is geinteresseert in de muziek zelf. Apps als [Spotify](...) en [SoundCloud](...), platformen waar de muziek centraal staat, richten zich op deze doelgroep.
 
 3. `productie` -> Deze groep mensen is geinteresseert in de techniek en de making-offs van de producten.
+
+### Doelgroep
+De Linernote app is bedoeld voor iedereen die meer wilt weten over zijn/haar favoriete artiesten. Doelgroep moet wel bekend zijn met de volgende platforms om het uiterste uit de Linernote app te halen:
+*   Spotify
+*   Instagram
+*   Twitter
+*   Ticketmaster
+*   Youtube
+Dit komt, omdat de app voornamelijk bestaat uit embedded iframes van de hierbovenstaande platforms. De gebruiker kan dan ook interacteren met deze iframes, maar het vergt wel enige kennis over die platform.  
 
 ## Context
 De applicatie is voor alsnog alleen gericht op mobiele gebruikers. De context waarin deze mensen specifiek Linernote zullen gebruiken is hierdoor lastig te bepalen. Het kan onderweg zijn of tijdens het wachten. Het zou ook kunnen helpen met inspiratie opdoen.

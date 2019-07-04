@@ -10,6 +10,8 @@
     - [Werking](#Werking)
     - [User Scenario](#User-Scenario)
 - [Design keuzes](#Design-keuzes)
+    - [Werking Product](#Werking-Product)
+    - [Styling Product](#Styling-Product)
 - [Code](#Code)
   - [Database](#Database)
 - [Conclusie](#Conclusie)
@@ -107,7 +109,7 @@ Voor de werking van het product hebben wij de volgende keuzes gemaakt:
 - `Single page application` & `PWA` -> Het eindproduct is een single page-, progressive web application. Dit zorgde ervoor dat de transitie's tussen verschillende pagina's soepeler ging. Waardoor de website een meer app-like gevoel kreeg, want de opdrachtgever wou er uiteindelijk een App van maken.
 
 ### Styling product
-Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project.
+Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project. Maar aan de hand van onze feedback is er door de opdrachtgever wel door het proces heen verandering aangebracht op het styling van het product. Deze kan je hieronder vinden van oudste versie naar de final versie met uitleg erbij waarom deze keuze gemaakt werd.
 
 
 ## Database

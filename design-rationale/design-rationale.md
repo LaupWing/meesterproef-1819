@@ -6,7 +6,7 @@
     - [Wat is Linernote?](#Wat-is-Linernote?)
     - [Het probleem](#Het-probleem)
     - [Doelgroep](#Doelgroep)
-- [Context](#Context)
+- [Het Product](#Het-Product)
   - [Users](#Users)
 - [Design keuzes](#Design-keuzes)
 - [Code](#Code)
@@ -57,13 +57,10 @@ Gebruikers kunnen op de Linernote App
 - [x] Via ticketmaster upcoming events van artiest vinden
 
 Beschikbare Social Media Platforms in Linernote App:
-
+![alt text](images/apis.png)
 ## Context
 De applicatie is voor alsnog alleen gericht op mobiele gebruikers. De context waarin deze mensen specifiek Linernote zullen gebruiken is hierdoor lastig te bepalen. Het kan onderweg zijn of tijdens het wachten. Het zou ook kunnen helpen met inspiratie opdoen.
 
-### Users
-
-![prototype](/img/follow.png)
 
 ## Design keuzes
 Er zijn tijdens dit process binnen het project enkele design keuzes gemaakt die in het eerdere design (nog) niet waren meegenomen.

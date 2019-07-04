@@ -71,11 +71,13 @@ Beschikbare Social Media Platforms in Linernote App:
     <p align="center">
     <img src="images/werking_2_1.gif"/>
     </p>
+
     *   Vergrootglas
 
     <p align="center">
     <img src="images/werking_2_2.gif"/>
     </p>
+    
 3.  Na het selecteren van een artiest, komt de gebruiker op de artiesten pagina terecht. Hier kan de gebruiker alle posts zien die de artiest heeft gepost op de tot nu beschikbare platforms van de Linernote app.
 <p align="center">
 <img src="images/werking_3.gif"/>

@@ -61,20 +61,30 @@ Beschikbare Social Media Platforms in Linernote App:
 ![alt text](images/apis.png)
 ### Werking
 1.  Het eerst wat de gebruiker ziet is een inlog scherm. De gebruiker dient eerst in te loggin via zijn/haar spotify account. Hierdoor krijgt Linernote app toestemming om de data te gebruiken van de gebruiker om de beste Linernote ervaring aan te bieden.
-![alt text](images/werking_1.gif)
+<p align="center">
+<img src="images/werking_1gif"/>
+</p>
 2.  In de Zero State krijgt de gebruiker geen posts te zien. De gebruiker moet eerst een artiest gaan volgen om posts te laten weergeven in de homescreen. Dit kan gedaan worden door of op het plusje te klikken en dan artiest naam invullen of via de navigatie onderin op het vergrootglas te klikken en dan artiest naam invullen.
     *   Plusje
     <p align="center">
     <img src="images/werking_2_1.gif"/>
     </p>
     *   Vergrootglas
-    ![alt text](images/werking_2_2.gif)
+    <p align="center">
+    <img src="images/werking_2_2.gif"/>
+    </p>
 3.  Na het selecteren van een artiest, komt de gebruiker op de artiesten pagina terecht. Hier kan de gebruiker alle posts zien die de artiest heeft gepost op de tot nu beschikbare platforms van de Linernote app.
-![alt text](images/werking_3.gif)
+<p align="center">
+<img src="images/werking_3.gif"/>
+</p>
 4.  De gebruiker kan deze artiest volgen door simpelweg op de follow button te klikken. Deze button word paars om aan te geven dat de gebruiker deze artiest heeft gevolgd.
-![alt text](images/werking_4.gif)
+<p align="center">
+<img src="images/werking_4.gif"/>
+</p>
 5.  Als de gebruiker terug gaat naar de homepagina, kan de gebruiker ook zien dat de posts van de gevolgde artiest nu allemaal worden geladen in de homepagina.
-![alt text](images/werking_5.gif)
+<p align="center">
+<img src="images/werking_5.gif"/>
+</p>
 ### User Scenario
 De applicatie is voor alsnog alleen gericht op mobiele gebruikers. De context waarin deze mensen specifiek Linernote zullen gebruiken is hierdoor lastig te bepalen. Het kan onderweg zijn of tijdens het wachten. Het zou ook kunnen helpen met inspiratie opdoen. 
 

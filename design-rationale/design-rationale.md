@@ -2,6 +2,7 @@
 
 ## Inhoud
 - [Debriefing](#Debriefing)
+    - [Opdrachtgever](#Opdrachtgever)
     - [Wat is Linernote?](#Wat-is-Linernote?)
     - [Het probleem](#Het-probleem)
     - [Doelgroep](#Doelgroep)
@@ -13,7 +14,8 @@
 - [Conclusie](#Conclusie)
 
 ## Debriefing
-Het concept "Linernote" is bedacht door [Joost de Boo](http://www.joostdeboo.nl/). Joost is een grafisch ontwerper en werkte bij een platenlabel toen het idee voor Linernote ontstond. De Linernote app moet zowel een muzikale- als een visuele ervaring worden.
+### Opdrachtgever
+Onze opdrachtegever was Joost de Boo, Joost is een grafisch ontwerper en werkte bij een platenlabel toen het idee voor Linernote ontstond. Het concept "Linernote" is bedacht door [Joost de Boo](http://www.joostdeboo.nl/). 
 
 ### Wat is Linernote?
 Linernote is een media platform met content van Instagram, Twitter, YouTube, Spotify en WikiPedia over verschillende artiesten. De data wordt opgehaald uit de API's en opgeslagen in een eigen database. Gebruikers loggen in door middel van Spotify.

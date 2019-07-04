@@ -1,5 +1,5 @@
 # Linernote Design rationale
-
+![alt text](images/Linernote_Logo_White.png)
 ## Inhoud
 - [Debriefing](#Debriefing)
     - [Opdrachtgever](#Opdrachtgever)
@@ -47,14 +47,21 @@ De Linernote app is bedoeld voor iedereen die meer wilt weten over zijn/haar fav
 *   Youtube
 Dit komt, omdat de app voornamelijk bestaat uit embedded iframes van de hierbovenstaande platforms. De gebruiker kan dan ook interacteren met deze iframes, maar het vergt wel enige kennis over die platform.  
 
+## Het Product
+Het product wat wij hebben gemaakt is de Linernote app. De Linernote appt zorgt ervoor dat de gebruiker zijn/haar favoriete artiest kunnen volgen op populaire social media via één applicatie maar!
+Gebruikers kunnen op de Linernote App
+- [x] Artiesten volgen
+- [x] Artiesten pagina's bezoeken
+- [x] Recente updates/social-media posts van gevolgde artiesten in de een feed bekijken
+- [x] Posts van de gevolgde artiesten sorteren en filteren
+- [x] Via ticketmaster upcoming events van artiest vinden
+
+Beschikbare Social Media Platforms in Linernote App:
+
 ## Context
 De applicatie is voor alsnog alleen gericht op mobiele gebruikers. De context waarin deze mensen specifiek Linernote zullen gebruiken is hierdoor lastig te bepalen. Het kan onderweg zijn of tijdens het wachten. Het zou ook kunnen helpen met inspiratie opdoen.
 
 ### Users
-Gebruikers kunnen...
-- [x] Artiesten volgen
-- [x] Artiesten pagina's bezoeken
-- [x] Recente updates van gevolgde artiesten in de een feed bekijken
 
 ![prototype](/img/follow.png)
 

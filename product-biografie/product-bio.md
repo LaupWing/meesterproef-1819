@@ -151,11 +151,59 @@ In de laatste week was de backend onderdeel klaar voor gebruik dus konden de men
 *       Code opschonen (door grote functie's in kleinere functie's op te splitsen)
 
 #### Server de juiste data laten ophalen
-In de server 
+In de `api.js` bestandje staat alle logica om de data op te halen uit verschillende api-endpoints (Merendeels word niet meer gebruikt, omdat we onze eigen database hebben). Voordat de database er was heb ik zelf geprobeerd om alle data op te halen uit de verschillende api's, dit werd gedaan door eerst naar de musicbrainz api te gaan en van daaruit alle sociale media op te halen. Na het ophalen van de social media links worden de data opgehaald van de beschikbare social media links uit music brainz. 
+
+##### Bijbehorden Functies
+`musicBrainz`
+Deze functie doet als volgt:
+*       `artist`: haalt data op aan de hand van artiest naam
+*       `artistId`: haalt id op uit `artist` variabele
+*       `artistLinks`: haalt alle social links op uit musicbrainz
+*       stuurt social links terug
+```javascript
+const musicBrainz = {
+    artistLinks: async name => {
+        const artist = await getData(`http://musicbrainz.org/ws/2/artist/?query=artist:${name}&fmt=json`)
+        const artistId = artist.artists[0].id
+        const artistLinks = await getData(`http://musicbrainz.org/ws/2/artist/${artistId}?inc=url-rels&fmt=json`)
+        return artistLinks
+    },
+}
+```
+
+`wikipedia`
+Deze functie doet als volgt:
+*       `allLinks`: haalt social links op uit de `musicBrainz.artistLinks` functie
+*       `getLink`: filtert de wikepdia link uit `allLinks` variabele
+*       `hardCodedLink`: hardcoded link voor het geval wikipedia link niet beschikbaar is
+*       `wikiLink`: checked of de wikipedia link aanwezig in de allLinks anders word de hardcoded link gebruikt
+*       `data`: haalt dat op uit de `wikiLink`
+*       stuurt data terug
+
+```javascript
+const wikipedia = async(name)=>{
+    try{
+        const allLinks  = await musicBrainz.artistLinks(removeAllNonAlpha(name))
+        const getLink = allLinks.filter(searchObj('wikipedia'))
+        const hardCodedLink = `https://en.wikipedia.org/api/rest_v1/page/summary/${name}`
+
+        const wikiLink  = (getLink.length===0) ? hardCodedLink : `https://en.wikipedia.org/api/rest_v1/page/summary/${getLink[0].urlrsc.split('https://en.wikipedia.org/wiki/')[1]}`
+
+        const data = await getData(`${wikiLink}`)
+        return data.extract
+    }catch{
+        console.log('error wikipedia data isnt loading')
+    }
+}
+```
+
+
 
 #### Website een app-like gevoel geven
 Om de website een meer app-like gevoel te geven heb ik ervoor gezorgd dat de gebruiker alleen maar de website hoeft te laden wanneer de gebruiker voor de eerste keer naar de website gaat. Dit houd in dat als de gebruiker navigeert naar een andere gedeelte van de website dat er niet nogmaals een pagina geladen hoeft te worden. Dit zorg ervoor dat de website een meer app-like gevoel heeft. 
 
+##### Bijbehorden Functies
+`getElement`
 Deze functie doet als volgt:
 *       Haalt HTML elementen op
 *       Verwijderd huidige elementen

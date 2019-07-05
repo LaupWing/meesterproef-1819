@@ -143,12 +143,12 @@ De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus
 
 ### Week 5
 In de laatste week was de backend onderdeel klaar voor gebruik dus konden de mensen echt pas beginnen aan de frontend. Tijdens deze week heb ik het meest aan het project kunnen werken. Mijn goals voor deze week was:
-*       Server de juiste data laten ophalen
-*       Data vertalen naar visuele elementen op de website
-*       Website een app-like gevoel geven
-*       Animatie's tussen verschillende pagina's (voor een soepele transitie)
-*       Code netjes opsplitsen in verschillende bestanden
-*       Code opschonen (door grote functie's in kleinere functie's op te splitsen)
+* Server de juiste data laten ophalen
+* Data vertalen naar visuele elementen op de website
+* Website een app-like gevoel geven
+* Animatie's tussen verschillende pagina's (voor een soepele transitie)
+* Code netjes opsplitsen in verschillende bestanden
+* Code opschonen (door grote functie's in kleinere functie's op te splitsen)
 
 #### Server de juiste data laten ophalen
 In de `api.js` bestandje staat alle logica om de data op te halen uit verschillende api-endpoints (Merendeels word niet meer gebruikt, omdat we onze eigen database hebben). Voordat de database er was heb ik zelf geprobeerd om alle data op te halen uit de verschillende api's, dit werd gedaan door eerst naar de musicbrainz api te gaan en van daaruit alle sociale media op te halen. Na het ophalen van de social media links worden de data opgehaald van de beschikbare social media links uit music brainz. 
@@ -156,10 +156,10 @@ In de `api.js` bestandje staat alle logica om de data op te halen uit verschille
 ##### Bijbehorden Functies
 `musicBrainz`
 Deze functie doet als volgt:
-*       `artist`: haalt data op aan de hand van artiest naam
-*       `artistId`: haalt id op uit `artist` variabele
-*       `artistLinks`: haalt alle social links op uit musicbrainz
-*       stuurt social links terug
+* `artist`: haalt data op aan de hand van artiest naam
+* `artistId`: haalt id op uit `artist` variabele
+* `artistLinks`: haalt alle social links op uit musicbrainz
+* stuurt social links terug
 ```javascript
 const musicBrainz = {
     artistLinks: async name => {
@@ -173,12 +173,12 @@ const musicBrainz = {
 
 `wikipedia`
 Deze functie doet als volgt:
-*       `allLinks`: haalt social links op uit de `musicBrainz.artistLinks` functie
-*       `getLink`: filtert de wikepdia link uit `allLinks` variabele
-*       `hardCodedLink`: hardcoded link voor het geval wikipedia link niet beschikbaar is
-*       `wikiLink`: checked of de wikipedia link aanwezig in de allLinks anders word de hardcoded link gebruikt
-*       `data`: haalt dat op uit de `wikiLink`
-*       stuurt data terug
+* `allLinks`: haalt social links op uit de `musicBrainz.artistLinks` functie
+* `getLink`: filtert de wikepdia link uit `allLinks` variabele
+* `hardCodedLink`: hardcoded link voor het geval wikipedia link niet beschikbaar is
+* `wikiLink`: checked of de wikipedia link aanwezig in de allLinks anders word de hardcoded link gebruikt
+* `data`: haalt dat op uit de `wikiLink`
+* stuurt data terug
 
 ```javascript
 const wikipedia = async(name)=>{
@@ -205,10 +205,10 @@ Om de website een meer app-like gevoel te geven heb ik ervoor gezorgd dat de geb
 ##### Bijbehorden Functies
 `getElement`
 Deze functie doet als volgt:
-*       Haalt HTML elementen op
-*       Verwijderd huidige elementen
-*       Laad de HTML elementen in
-*       Bekijkt op welke pagina de gebruiker is
+* Haalt HTML elementen op
+* Verwijderd huidige elementen
+* Laad de HTML elementen in
+* Bekijkt op welke pagina de gebruiker is
 ```javascript
 function getElement(href){
     console.log("%c fetchHTML- Creating new elements", consoleStyling)

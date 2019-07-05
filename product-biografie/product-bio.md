@@ -142,3 +142,37 @@ De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus
 *   Wederom communcatie problemen
 
 ### Week 5
+In de laatste week was de backend onderdeel klaar voor gebruik dus konden de mensen echt pas beginnen aan de frontend. Tijdens deze week heb ik het meest aan het project kunnen werken. Mijn goals voor deze week was:
+*       Server de juiste data laten ophalen
+*       Data vertalen naar visuele elementen op de website
+*       Website een app-like gevoel geven
+*       Animatie's tussen verschillende pagina's (voor een soepele transitie)
+*       Code netjes opsplitsen in verschillende bestanden
+*       Code opschonen (door grote functie's in kleinere functie's op te splitsen)
+
+#### Server de juiste data laten ophalen
+In de server 
+
+#### Website een app-like gevoel geven
+Om de website een meer app-like gevoel te geven heb ik ervoor gezorgd dat de gebruiker alleen maar de website hoeft te laden wanneer de gebruiker voor de eerste keer naar de website gaat. Dit houd in dat als de gebruiker navigeert naar een andere gedeelte van de website dat er niet nogmaals een pagina geladen hoeft te worden. Dit zorg ervoor dat de website een meer app-like gevoel heeft. 
+
+Deze functie doet als volgt:
+*       Haalt HTML elementen op
+*       Verwijderd huidige elementen
+*       Laad de HTML elementen in
+*       Bekijkt op welke pagina de gebruiker is
+```javascript
+function getElement(href){
+    console.log("%c fetchHTML- Creating new elements", consoleStyling)
+    const container = document.querySelector('main')
+    if(href === 'javascript:void(0);')   return
+    fetch(href)
+        .then(data=>data.text())
+        .then(body=>{
+            removeChilds(container)
+            container.insertAdjacentHTML('beforeend',body)
+            container.classList.remove('fadeAway')
+            checkWhichPage()
+        })    
+}
+```

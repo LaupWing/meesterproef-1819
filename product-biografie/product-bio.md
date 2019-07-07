@@ -8,6 +8,7 @@ In de productbiografie kan je mijn proces vinden voor de meesterproef van de min
     *   [RTW](#rtw)
 3.  [Logboek](#logboek)
 4.  [Zeflreflectie](#zelfreflectie)
+    *   [Leerdoelen-reflectie](#leerdoelen-reflectie)
 
 ## Inleiding
 Voor de meesterproef heb ik mij ingeschreven bij Linernote. Dit project sprak mij aan, omdat het concept voornamlijk rondom het onderwerp muziek en artiesten draaide en zelf luister ik dagelijks muziek onderweg of tijdens het sporten. 
@@ -146,9 +147,6 @@ In de laatste week was de backend onderdeel klaar voor gebruik dus konden de men
 * Server de juiste data laten ophalen
 * Data vertalen naar visuele elementen op de website
 * Website een app-like gevoel geven
-* Animatie's tussen verschillende pagina's (voor een soepele transitie)
-* Code netjes opsplitsen in verschillende bestanden
-* Code opschonen (door grote functie's in kleinere functie's op te splitsen)
 
 #### Server de juiste data laten ophalen
 In de `api.js` bestandje staat alle logica om de data op te halen uit verschillende api-endpoints (Merendeels word niet meer gebruikt, omdat we onze eigen database hebben). Voordat de database er was heb ik zelf geprobeerd om alle data op te halen uit de verschillende api's, dit werd gedaan door eerst naar de musicbrainz api te gaan en van daaruit alle sociale media op te halen. Na het ophalen van de social media links worden de data opgehaald van de beschikbare social media links uit music brainz. 
@@ -200,27 +198,82 @@ const wikipedia = async(name)=>{
 Om de data te vertalen naar visuele elementen op de pagina heb gebruik gemaakt en ejs en sockets om elementen in te laden. De meeste elementen zijn gerenderd via ejs aan de serverside en slechts alleen de zoekresultaten word gerenderd met sockets.
 
 ##### ejs
-Hieronder kan je de verschillende templat files vinden. Door op de ejs bestand te klikken ga je naar het desbetreffende source code.
+Hieronder kan je de verschillende templat files vinden. Door op het bestandnaam te klikken ga je naar het desbetreffende source code. Zoals je hieronder kan zien bestaat de website voornamelijk maar uit 2 pagina's: index en de login pagina. Zodra de gebruiker ingelogd is, word alleen maar de index.ejs pagina gebruikt als basis. Als de gebruiker navigeert naar een andere gedeelte van de websites dan word de webpagina door javascript weggehaald en vervolgens de gewensde pagina ingeladen door javascript. Hierdoor lijkt de website op een onepager. Bekijk [Website een app-like gevoel geven](#Website-een-applike-gevoel-geven) voor meer info hierover.
 
 * :open_file_folder: Views
-    * :page_facing_up: index.ejs
-    * :page_facing_up: login.ejs
+    * :page_facing_up: [index.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/index.ejs)
+    * :page_facing_up: [login.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
     * :open_file_folder: partials
-        * :page_facing_up: artist.ejs
-        * :page_facing_up: following.ejs
-        * :page_facing_up: followingList.ejs
-        * :page_facing_up: head.ejs
-        * :page_facing_up: homefeed.ejs
-        * :page_facing_up: nav.ejs
-        * :page_facing_up: search.ejs
+        * :page_facing_up: [artist.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist.ejs)
+        * :page_facing_up: [following.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/following.ejs)
+        * :page_facing_up: [followingList.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/followingList.ejs)
+        * :page_facing_up: [head.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/head.ejs)
+        * :page_facing_up: [homefeed.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/homefeed.ejs)
+        * :page_facing_up: [nav.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/nav.ejs)
+        * :page_facing_up: [search.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/search.ejs)
             * :open_file_folder: artist-partials
-                * :page_facing_up: feeds.ejs
-                * :page_facing_up: filter.ejs
-                * :page_facing_up: related.ejs
+                * :page_facing_up: [feeds.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs)
+                * :page_facing_up: [filter.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/filter.ejs)
+                * :page_facing_up: [related.ejs](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs)
+##### Sockets
+Om de zoek feature zo soepel mogelijk te laten verlopen heb ik ervoor gekozen om een socket verbinding te gebruiken om data zo snel mogelijk van de server naar de client te brengen.
+###### Bijbhorende Functies
+####### Clientside Code
+Deze functie hieronder word gedaan na een key up event in de input.
+Deze functie doet als volgt:
+* verwijderd content wanneer value gelijk aan null is
+* Laat x icoontjes zien wanneer er iets word getypd
+* Verstuurd socket event wanneer waarde groter is dan drie
+```javascript
+function getSearchResults(){
+    console.log("%c searchPage- typing", consoleStyling)
+    const input = document.querySelector('#search')
+    if(input.value.length === 0){
+        const container = document.querySelector('section.search-main')
+        document.querySelector('.input-container i').classList.remove('reveal')
+        removeChilds(container)
+    }
+    else if(input.value.length > 0){
+        document.querySelector('.input-container i').classList.add('reveal')
+    }
+    if(input.value.length >3){
+        console.log("emitting search")
+        socket.emit('sending searchvalue', input.value)
+    }
+}
+```
+####### Serverside Code
+```javascript
+socket.on('sending searchvalue',async (value)=>{
+try{
+    const result        = await ourDB.nameQuery(value)
+    const searchSpotify = await spotifyApi.search(result.artist,acces_token)
+    const img           = searchSpotify.artists.items[0].images[0].url
+    const spotifyId     = searchSpotify.artists.items[0].id
+    result.img          = img
+    result.spotifyId    = spotifyId
 
+    let followed        = 'noborder'
+    for(fw of following){
+        if(fw.id===result.id){
+            followed = 'border'
+        }
+    }
+    socket.emit('sending artistinfo', {
+        result,
+        foundSomething: true,
+        followed
+    })            
+}catch{
+    socket.emit('sending artistinfo', {
+        result          : 'Found nothing!',
+        foundSomething  : false
+    })
+}
+})
+```
 
-
-#### Website een app-like gevoel geven
+#### Website een applike gevoel geven
 Om de website een meer app-like gevoel te geven heb ik ervoor gezorgd dat de gebruiker alleen maar de website hoeft te laden wanneer de gebruiker voor de eerste keer naar de website gaat. Dit houd in dat als de gebruiker navigeert naar een andere gedeelte van de website dat er niet nogmaals een pagina geladen hoeft te worden. Dit zorg ervoor dat de website een meer app-like gevoel heeft. 
 
 ##### Bijbehorden Functies

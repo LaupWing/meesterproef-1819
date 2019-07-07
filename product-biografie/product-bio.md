@@ -172,7 +172,7 @@ const musicBrainz = {
 ```
 
 `wikipedia`
-Deze functie doet als volgt:
+Deze functie doet als volgt (dit is één van de vele api functie's):
 * `allLinks`: haalt social links op uit de `musicBrainz.artistLinks` functie
 * `getLink`: filtert de wikepdia link uit `allLinks` variabele
 * `hardCodedLink`: hardcoded link voor het geval wikipedia link niet beschikbaar is
@@ -196,6 +196,27 @@ const wikipedia = async(name)=>{
     }
 }
 ```
+#### Data vertalen naar visuele elementen op de website
+Om de data te vertalen naar visuele elementen op de pagina heb gebruik gemaakt en ejs en sockets om elementen in te laden. De meeste elementen zijn gerenderd via ejs aan de serverside en slechts alleen de zoekresultaten word gerenderd met sockets.
+
+##### ejs
+Hieronder kan je de verschillende templat files vinden. Door op de ejs bestand te klikken ga je naar het desbetreffende source code.
+
+* :open_file_folder: Views
+    * :page_facing_up: index.ejs
+    * :page_facing_up: login.ejs
+    * :open_file_folder: partials
+        * :page_facing_up: artist.ejs
+        * :page_facing_up: following.ejs
+        * :page_facing_up: followingList.ejs
+        * :page_facing_up: head.ejs
+        * :page_facing_up: homefeed.ejs
+        * :page_facing_up: nav.ejs
+        * :page_facing_up: search.ejs
+            * :open_file_folder: artist-partials
+                * :page_facing_up: feeds.ejs
+                * :page_facing_up: filter.ejs
+                * :page_facing_up: related.ejs
 
 
 

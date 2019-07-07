@@ -218,8 +218,9 @@ Hieronder kan je de verschillende templat files vinden. Door op het bestandnaam 
 ##### Sockets
 Om de zoek feature zo soepel mogelijk te laten verlopen heb ik ervoor gekozen om een socket verbinding te gebruiken om data zo snel mogelijk van de server naar de client te brengen.
 ###### Bijbhorende Functies
-####### Clientside Code
+**Clientside Code**
 Deze functie hieronder word gedaan na een key up event in de input.
+
 Deze functie doet als volgt:
 * verwijderd content wanneer value gelijk aan null is
 * Laat x icoontjes zien wanneer er iets word getypd
@@ -242,7 +243,13 @@ function getSearchResults(){
     }
 }
 ```
-####### Serverside Code
+**Serverside Code**
+Deze functie doet als volgt:
+* luisterd naar een socket event
+* laat data in via de `api.js` functie's
+* bekijkt welke artiesten de gebruiker al volgt om een visuele indictie toe te voegen
+* stuurt socket event terug met de data
+
 ```javascript
 socket.on('sending searchvalue',async (value)=>{
 try{

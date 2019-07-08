@@ -111,6 +111,12 @@ Voor de werking van het product hebben wij de volgende keuzes gemaakt:
 ### Styling product
 Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project. Maar aan de hand van onze feedback is er door de opdrachtgever wel door het proces heen verandering aangebracht op het styling van het product. Deze kan je hieronder vinden van oudste versie naar de final versie met uitleg erbij waarom deze keuze gemaakt werd.
 
+### Database
+
+Omdat linernote data wil gebruiken vanuit meerdere bronnen, zoals Youtube, Instagram, Ticketmaster en Twitter. Hebben we er voor gekozen dat de backend om de zoveel tijd data ophaalt uit deze bronnen. En deze wordt dan opgeslagen in een database. Hierdoor wordt de laadtijd veel sneller omdat de frontend zelf niet alle requests afhandelt, maar data direct uit een eigen database haalt. 
+
+Ook hebben we er voor kozen om een database te gebruiken, omdat de gebruikers artiesten kunnen volgen en een RDBMS (relational database management system) is daar heel geschikt voor. Dit zou ook in een localstorage kunnen. Maar wanneer de gebruiker inlogt op een ander aparaat, zal hij/zij alle artiesten opnieuw moeten volgen. Dit is omdat localstorage, zoals de naam zelf ook weggeeft een lokale opslag plaats. 
+
 
 ## Database
 ### Waarom?

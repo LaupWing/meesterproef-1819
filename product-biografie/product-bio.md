@@ -327,14 +327,14 @@ _Hier staan alle javascript files geladen die vanaf de login pagina al worden in
         * :page_facing_up: [search.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/followingList.ejs)
             * :open_file_folder: error-preventing:
             _Hier staan de error preventing files in_
-                * :page_facing_up: [preventError.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs):_preventError.js: Errors voorkomen_
+                * :page_facing_up: [preventError.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _Errors voorkomen_
             * :open_file_folder: page-operators:
             _Hier staan alle pagina operatoren files in. Wanneer den gebruiker van pagina veranderd worden er allerlei functie's gestart die staan dus in files hieronder_
-                * :page_facing_up: [feeds.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _feeds.js: Posts van artiesten activeren (iframes maken)_
-                * :page_facing_up: [fetchHTML.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/filter.ejs): _fetchHTML.js: Webpagina's opvragen en inladen_
-                * :page_facing_up: [switchingPages.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs): _switchingPages.js: Wanneer er van pagina word geswitched, word er gekeken op welke pagina de gebruiker zich bevind zodat de juiste functie's worden gestart_
+                * :page_facing_up: [feeds.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _Posts van artiesten activeren (iframes maken)_
+                * :page_facing_up: [fetchHTML.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/filter.ejs): _Webpagina's opvragen en inladen_
+                * :page_facing_up: [switchingPages.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs): _Wanneer er van pagina word geswitched, word er gekeken op welke pagina de gebruiker zich bevind zodat de juiste functie's worden gestart_
             * :open_file_folder: page-parts: _Hier staan de elementen die op elke pagina worden geladen_
-                * :page_facing_up: [navigation.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs): _navigation.js: navigatie onderin de pagina na de inlog scherm_
-            * :open_file_folder: page-states
-            __Hier staan de pagina states in__
-                * :page_facing_up: [states.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs):_states.js: huidige staat van de webpagina en vorige staat om de gebruiker de optie te geven om een pagina terug te gaan_
+                * :page_facing_up: [navigation.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs): _navigatie onderin de pagina na de inlog scherm_
+            * :open_file_folder: page-states: 
+            _Hier staan de pagina states in_
+                * :page_facing_up: [states.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _huidige staat van de webpagina en vorige staat om de gebruiker de optie te geven om een pagina terug te gaan_

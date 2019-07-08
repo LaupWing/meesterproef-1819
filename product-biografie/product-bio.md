@@ -403,8 +403,63 @@ Deze functie hieronder bekijkt welke element aanwezig op een pagina. Aan de hand
     }
     ```
 *   `Je hebt andere slimme methodes gebruikt om JSON data te manipuleren`
-*   `Je hebt je verdiept in de API en aan de hand van API docs de op te halen data zo efficient mogelijk opgevraagd`
+*   `Je hebt je verdiept in de API en aan de hand van API docs de op te halen data zo efficient mogelijk opgevraagd`: Voordat mijn teamgenoot besloot om alle api data op te slaan, was het mijn taak om de data op te halen uit de verschillende api's. 
+    * [Klik hier voor de api.js bestand](#ejs)
+    * Bovenin de `api.js` bestand kan je de algemene functie's vinden die data ophaald uit een bepaalde api eindpoint ophalen. Deze functie's hebben een url nodig of url en een acces token.
+    ```javascript
+    function getDataWithToken({url,acces_token}){
+        return fetch(url,
+        {
+            headers:
+            {
+            'Authorization': 'Bearer ' + acces_token
+            }
+        })
+            .then(response=> response.json())
+    }
+
+    function getData(url){
+        return fetch(url)
+            .then(response=> response.json())
+    }
+    ```
+    * Voorbeeldcode van 1 van de api functie's binnen `api.js` bestand:
+        * Alle functie's binnen een bepaalde api worden in een object property gestopt met als naam de API bron en de functie's callen allemaal een andere endpoint
+        ```javascript
+        const spotifyApi ={
+            search: (name, acces_token) =>{
+                const config = {
+                    url: `https://api.spotify.com/v1/search?q=${name}&type=artist&limit=5&offset=0`,
+                    acces_token
+                }
+                return getDataWithToken(config)
+            },
+            artist: (id, acces_token)=>{
+                const config = {
+                    url: `https://api.spotify.com/v1/artists/${id}`,
+                    acces_token
+                }
+                return getDataWithToken(config)
+            },
+            related: (id, acces_token) =>{
+                const config= {
+                    url: `https://api.spotify.com/v1/artists/${id}/related-artists`,
+                    acces_token
+                }
+                return getDataWithToken(config)
+            },
+            topTracks: (id, acces_token) =>{
+                const config = {
+                    url: `https://api.spotify.com/v1/artists/${id}/top-tracks?country=NL`,
+                    acces_token
+                }
+                return getDataWithToken(config)
+            }
+        }
+        ``` 
 *   `Ik heb geen enkele OCD source-formatting neiging als ik naar jouw code kijk. De structuur is volledig duidelijk en logisch opgezet`
+    * [Klik hier voor de ejs mappenstructuur en link naar de ejs files](#ejs)
+    * [Klik hier voor de js mappenstructuur en link naar de js files](#Mappen-indeling-JS)
 *   `Het is gelukt om, met behulp van een micro library, JSON data te renderen naar HTML`
 #### RTW
 ##### Punten uit de rubric

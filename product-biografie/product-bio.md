@@ -305,3 +305,43 @@ function getElement(href){
         })    
 }
 ```
+Doordat de webpagina's niet worden geladen maar ingeladen door middel van javascript, moest ik ervoor zorgen nadat de gebruiker op een andere webpagina dat alle juist functionaliteiten worden ingeladen. 
+Je kan hierbij denken aan:
+* Juiste events bij de juiste webpagina
+* Wat de vorige staat was. (wanneer de gebruiker een webpagina terug wilt gaan)
+* Errors voorkomen (bijv: als een gebruiker weer op hetzelfde link klikt, wat gebeurt er met de state dan?)
+
+Om al de punten hierboven te realiseren is het van uiterst belang dat ik de mappen indeling zo goed mogelijk ga indelen, waardoor het uiteindelijk voor mij ook makkelijker word om onderdelen te veranderen. 
+
+###### Mappen indeling
+* :open_file_folder: js
+__Hier staan alle javascript files geladen die vanaf de login pagina al worden ingeladen__
+    * :page_facing_up: [main.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/index.ejs)
+    * :page_facing_up: [resize.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
+    * :page_facing_up: [utils.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
+    * :page_facing_up: [socket.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
+    * :open_file_folder: pages
+    __Hier staan alle javascript files geladen voor specifike webpagina's binnen de index.html pagina(deze webpaginas worden ingeladen zonder de pagina te laden)__
+        * :page_facing_up: [artistPage.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist.ejs)
+        * :page_facing_up: [homepage.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/following.ejs)
+        * :page_facing_up: [search.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/followingList.ejs)
+            * :open_file_folder: error-preventing
+            __Hier staan de error preventing files in__
+                __preventError.js: Errors voorkomen__
+                * :page_facing_up: [preventError.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs)
+            * :open_file_folder: page-operators
+            __Hier staan alle pagina operatoren files in. Wanneer den gebruiker van pagina veranderd worden er allerlei functie's gestart die staan dus in files hieronder__
+                __feeds.js: Posts van artiesten activeren (iframes maken)__
+                * :page_facing_up: [feeds.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs)
+                __fetchHTML.js: Webpagina's opvragen en inladen__
+                * :page_facing_up: [fetchHTML.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/filter.ejs)
+                __switchingPages.js: Wanneer er van pagina word geswitched, word er gekeken op welke pagina de gebruiker zich bevind zodat de juiste functie's worden gestart__
+                * :page_facing_up: [switchingPages.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs)
+            * :open_file_folder: page-parts
+            __Hier staan de elementen die op elke pagina worden geladen__
+                __navigation.js: navigatie onderin de pagina na de inlog scherm__
+                * :page_facing_up: [navigation.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs)
+            * :open_file_folder: page-states
+            __Hier staan de pagina states in__
+                __states.js: huidige staat van de webpagina en vorige staat om de gebruiker de optie te geven om een pagina terug te gaan__
+                * :page_facing_up: [states.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs)

@@ -14,17 +14,17 @@ In de productbiografie kan je mijn proces vinden voor de meesterproef van de min
         *  [Bevindingen](#bevindingen)
         *  [Wat kon beter](#wat-kon-beter)
     2.  [Week2](#week2)
-        *  [Wat heb ik gedaan](#wat-heb-ik-gedaan)
-        *  [Bevindingen](#bevindingen)
-        *  [Wat kon beter](#wat-kon-beter)
+        *  [2.1 Wat heb ik gedaan](#2.1-wat-heb-ik-gedaan)
+        *  [2.1 Bevindingen](#2.1-bevindingen)
+        *  [2.1 Wat kon beter](#2.1-wat-kon-beter)
     3.  [Week3](#week3)
-        *  [Wat heb ik gedaan](#wat-heb-ik-gedaan)
-        *  [Bevindingen](#bevindingen)
-        *  [Wat kon beter](#wat-kon-beter)
+        *  [3.1 Wat heb ik gedaan](#3.1-wat-heb-ik-gedaan)
+        *  [3.1 Bevindingen](#3.1-bevindingen)
+        *  [3.1 Wat kon beter](#3.1-wat-kon-beter)
     4.  [Week4](#week4)
-        *  [Wat heb ik gedaan](#wat-heb-ik-gedaan)
-        *  [Bevindingen](#bevindingen)
-        *  [Wat kon beter](#wat-kon-beter)
+        *  [4.1 Wat heb ik gedaan](#4.1-wat-heb-ik-gedaan)
+        *  [4.1 Bevindingen](#4.1-bevindingen)
+        *  [4.1 Wat kon beter](#4.1-wat-kon-beter)
     5.  [Week5](#week5)
         *  [Server de juiste data laten ophalen](#server-de-juiste-data-laten-ophalen)
             *  [Bijbehorende functies](#bijbehorende-functies)
@@ -92,7 +92,7 @@ We hadden in deze week de afspraak gemaakt dat Zekkie de backend zou maken, zoda
 
 Na het onderzoeken van verschillende API's in de eerste week kwamen we er al snel achter dat de instagram api niet meer beschikbaar was voor openbaar gebruik en dat de meeste api's in onze must-have list een bepaalde authenticatie voor nodig was(ook wel OAUTH genoemd). Dit zorgt ervoor dat als de gebruiker op de Linernote app wilt komen eerst meerdere keren moet inloggen voordat hij/zij op de Linernote app zelf kwam.
 
-#### Wat heb ik gedaan?
+#### 1.1 Wat heb ik gedaan?
 *   Team gemaakt(Zekkie + Loc)
 *   Afspraken gemaakt wie doet wat
     *   Zekkie maakt de backend
@@ -106,26 +106,26 @@ Na het onderzoeken van verschillende API's in de eerste week kwamen we er al sne
 *   Eerste documentatie gemaakt 
     *   [Link Readme](https://github.com/LaupWing/Linernote)
 
-#### Bevindingen
+#### 1.1 Bevindingen
 *   Data uit: Instagram, Spotify, Ticketmaster en Youtube is a must (Debrief)
 *   Website word uiteindelijk een app (Debrief)
 *   Instagram API niet beschikbaar (API onderzoek)
 *   Spotify, Youtube is inloggen een vereiste (API onderzoek)
 *   Meeste API's bieden een embed aan van een post, dit houd dat er een iframe word gemaakt van eenpost (API onderzoek)
 
-#### Wat kon beter?
+#### 1.1 Wat kon beter?
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 
 ### Week 2
 In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na het laten zien van onze prototypes kwam Joost op het idee om de posts te kunnen liken en commenten van de artiesten. Deze like en comment systeem werkt binnen de Linernote app. Dus de likes en comments worden niet naar de platform zelf gepost maar allemaal in de Linernote app zelf. Joost wou ook een wrapper rondom de embedded posts voor styling. In deze week besloot May ook om deel te nemen aan ons groepje.
 
-#### Wat hebben ik gedaan?
+#### 2.1 Wat hebben ik gedaan?
 *   Gekeken of er een wrapper rondom de embeds konden
 *   Alternatieve mogelijkheden bekijken om data uit Instagram te halen
 *   Opnieuwe server en frontendcode geschreven, zodat May samen met mij kon werken aan de prototype.   
 *   Ticketmaster api toegepast
 
-#### Bevindingen
+#### 2.1 Bevindingen
 *   Joost wou een wrapper rondom embedded posts voor styling
 *   Joost wou dat de gebruiker onder elke post kon commenten en liken
     *   ![comment en like](images/comment.png)
@@ -133,24 +133,24 @@ In week 2 hadden we rond 10 uur afgesproken in het volkshotel voor feedback. Na 
 *   Instagram is mogelijk door scrapen van de shortcodes met puppeteeer(node package)
 *   Zekkie slaat alle data op in zijn eigen backend (Dat had ik niet verwacht)
 
-#### Wat kon beter?
+#### 2.1 Wat kon beter?
 *   Afspraken noteren en heel duidelijk maken wie wat doet
 *   Beter communiceren, ik vond het namelijk totaal onzin om alle data op te slaan in een database omdat ik het nut ervan niet in zag en totaal niet deel was van de opdracht zelf. Maar ik had niks daar niks over gezegd.
 
 ### Week 3
 Deze week was er op een maandag een feestdag waardoor we geen feedback moment hadden met Joost. In deze week heb ik samen met May de applicatie interface gemaakt. Tijdens deze week waren en nogal onenigheden binnen ons groepje. Iedereen had een andere idee in zijn/haar gedachten voor dit product. En iedereen voerde maar zijn/haar eigen idee uit. Ik was van mening dat we gewoon de design en concept van onze opdrachtgever maar moeten aanhouden, maar May (met wie ik samen frontend taken had) had een andere mening hierover. Ik ben uiteindelijk maar meegegaan met haar mening en we werkten toen uit wat zij in haar gedachten had hoe dit product zou moeten uitzien. Verder was de database waar alle posts in worden opgeslagen bij lange na nog niet klaar, dus hadden we geen data om de homepagina te renderen. Ik besloot toen om zelf via de server api calls te maken om deze data toch te verkrijgen.
 
-#### Wat heb ik gedaan?
+#### 3.1 Wat heb ik gedaan?
 *   Samen met May de artiesten pagina gemaakt
     *   Kleine effecten toegevoegd zoals uitzoom functie in de album carousel
     *   ![comment en like](images/second_prototype.gif)
 *   Verder API's onderzoeken
 
-#### Bevindingen
+#### 3.1 Bevindingen
 *   Samenwerken is moeilijker is dan ik gedacht had.
 *   Iedereen had een andere opinie/idee over dit project
 
-#### Wat kon beter?
+#### 3.1 Wat kon beter?
 *   Communicatie en bespreken over hoe en wat
 
 ### Week 4
@@ -158,18 +158,18 @@ Tijdens deze week waren ik en May niet aanwezig bij de feedback momentje met Joo
 
 De design van Joost bestond voornamelijk uit de post embeds van de artiesten dus data hebben van elke artiest was van uiterste belang voor de frontend, maar helaas was Zekkie nog niet klaar met het opslaan van de data van verschillende artiesten. Hierdoor hadden ik en May niet veel te doen tijdens deze week. Ik had toen zelf maar weer geprobeerd om data uit de verschillende API's te halen, zodat wij verder konden gaan. Na een poosje onderzoeken stuitte ik op de MusicBrainz API. Dit was een hele fijne ontdekking, omdat we via de Musicbrainz API makkelijk naar de artiesten hun social media konden navigeren en daar data vandaan konden halen.
 
-#### Wat heb ik gedaan?
+#### 4.1 Wat heb ik gedaan?
 *   API's data fetchen en implementeren in de frontend.
 *   Frontend styling
 
-#### Bevindingen
+#### 4.1 Bevindingen
 *   MusicBrainz API maakt het makkelijker om de social links te krijgen van Artiesten
     *   ![comment en like](images/musicbrainz.png)
         *   In elke relation heb je een URL waar we data van konden halen.
 *   Design moest exact worden nagemaakt
 *   Like systeem en commenten hoefde niet meer
 
-#### Wat kon beter?
+#### 4.1 Wat kon beter?
 *   Wederom communcatie problemen
 
 ### Week 5

@@ -35,7 +35,6 @@ Heel veel punten uit de rubric van WAFS waren van toepassing bij het project bij
 
 #### Punten uit de rubric
 *   `Je hebt, met behulp van een micro library, routes toegepast naar een overzichts- en een detailpagina.`
-*   `De flow is dusdanig gevisualiseerd dat het helemaal helder is hoe de applicatie werkt`
 *   `Je hebt andere slimme methodes gebruikt om JSON data te manipuleren`
 *   `Je hebt je verdiept in de API en aan de hand van API docs de op te halen data zo efficient mogelijk opgevraagd`
 *   `Ik heb geen enkele OCD source-formatting neiging als ik naar jouw code kijk. De structuur is volledig duidelijk en logisch opgezet`
@@ -313,7 +312,7 @@ Je kan hierbij denken aan:
 
 Om al de punten hierboven te realiseren is het van uiterst belang dat ik de mappen indeling zo goed mogelijk ga indelen, waardoor het uiteindelijk voor mij ook makkelijker word om onderdelen te veranderen. 
 
-###### Mappen indeling
+###### Mappen indeling JS
 * :open_file_folder: js:
 _Hier staan alle javascript files geladen die vanaf de login pagina al worden ingeladen_
     * :page_facing_up: [main.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/index.ejs)
@@ -338,3 +337,75 @@ _Hier staan alle javascript files geladen die vanaf de login pagina al worden in
             * :open_file_folder: page-states: 
             _Hier staan de pagina states in_
                 * :page_facing_up: [states.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _huidige staat van de webpagina en vorige staat om de gebruiker de optie te geven om een pagina terug te gaan_
+
+## Zelfreflectie
+
+Ik tijdens dit project meer geleerd over in groepjes samenwerken dan dat ik mijn leerdoelen heb gerealiseerd. Tijdens dit project heb ik geleerd dat duidelijke communicatie van uiterste belang is in een groepsproject. Gedurende project hadden we te weinig communcatie waardoor er veel dingen dubbel werden gemaakt. Tevens hadden mijn teamgenoten ook veel issue met het project zelf. Iedereen had een andere opinie wat betreft het project zelf. Hierdoor waren er veel verkeerde keuzes gemaakt wat resulteerde dat we veel meer werk hadden dan dat eigenlijk nodig was.
+
+In het begin was de backend bedoeld om ervoor te zorgen dat mensen zich konden aanmelden voor de linernote project en uiteindelijk artiesten kunnen volgen. Dit waaren de afspraken dat ik gemaakt had met mijn teamgenoot. Maar halverwege het project kwam ik erachter dat deze teamgenoot heel iets anders in gedachten had en ergens anders mee bezig was. Ik had hiervan niet veel gezegd. Wat uiteindelijk voor mij heel veel stress had gezorgd en frustratie, omdat we pas op de één van laatste dagen pas konden beginnen met frontend. Dit was een resultaat van mijn gebrek aan duidelijk communiceren.
+
+Achteraf heb ik gelukkig wel mijn leerdoelen kunnen realiseren met veel stress. Maar dit had mij heel veel frustratie en stress gekost als ik duidelijk had gecommuniceerd.
+
+### Leerdoelen Reflectie
+#### WAFS
+##### Punten uit de rubric
+*   `Je hebt, met behulp van een micro library, routes toegepast naar een overzichts- en een detailpagina.`
+    Door het gebruik van EJS heb ik ervoor gezorgt dat de webpagina's dynamische worden gerenderd op de server. Vervolgens heb ik door middel van javascript ervoor gezorgd dat de webpagina's worden ingeladen. Hierdoor word de webpagina niet geladen wanneer de gebruiker een andere pagina bezoekt. Doordat ik de webpagina's inlaad door middel van javascript is het belangrijk dat de juist functionaliteiten op de clientside javascript worden geladen en tevens ook dat de juiste data worden geladen op de juiste routes op de server.
+    * [Klik hier voor de ejs mappenstructuur en link naar de ejs files](#ejs)
+    * [Klik hier voor de js mappenstructuur en link naar de js files](#Mappen-indeling-JS)
+    * Deze functie hieronder is gemaakt om de ejs templates op te halen uit de server
+    ```javascript
+    function getElement(href){
+    console.log("%c fetchHTML- Creating new elements", consoleStyling)
+    const container = document.querySelector('main')
+    if(href === 'javascript:void(0);')   return
+    fetch(href)
+        .then(data=>data.text())
+        .then(body=>{
+            removeChilds(container)
+            container.insertAdjacentHTML('beforeend',body)
+            container.classList.remove('fadeAway')
+            checkWhichPage()
+        })    
+    }
+    ```
+        * `if(href === 'javascript:void(0);')`: Hier word er gekeken of de link bestaat uit `javascript:void(0)` voor het voorkomen van errors
+        * `fetch(href)`: Ophalen van de ejs webpagina uit de server
+        * `removeChilds(container)`: Verwijderd alle contenten uit de body
+        * `container.insertAdjacentHTML('beforeend',body)`: Voegt nieuwe content toe aan de body
+        * `checkWhichPage()`:
+        Deze functie hieronder bekijkt welke element aanwezig op een pagina. Aan de hand van de aanwezige element word er bepaald op welke website de gebruiker zich bevind, waardoor de juiste functie's worden gestart voor desbetreffende pagina.
+    ```javascript
+    function checkWhichPage(){
+        console.log("%c fetchHTML- Checking Which page user is on", consoleStyling)
+        preventError.turnOffLink(false)
+        // If the id search excist that means that we are on the searchpage
+        if(document.querySelector('input#search')){
+            searchPage.events()
+        }
+        // If the class addNew excist that means that we are on the homepage
+        if(document.querySelector('.addNew a')){
+            navigation.events(document.querySelectorAll('.addNew a'))
+        }
+        else if(document.querySelector('section#homeFeed')){
+            navigation.events(document.querySelectorAll('ul.list a'))
+            console.log("%c fetchHTML- Requesting Homefeed", consoleStyling)
+            homepage.requestHomeFeed()
+        }
+        else if(document.querySelector('.image-container-following')){
+            navigation.events(document.querySelectorAll('ul.list a'))
+        }
+        // If the class artist-header excist that means that we are on the artistpage
+        if(document.querySelector('header.artist-header')!==null){
+            document.querySelector('main').classList.add("artist-page")
+            artistPage.events()
+        }
+    }
+    ```
+*   `Je hebt andere slimme methodes gebruikt om JSON data te manipuleren`
+*   `Je hebt je verdiept in de API en aan de hand van API docs de op te halen data zo efficient mogelijk opgevraagd`
+*   `Ik heb geen enkele OCD source-formatting neiging als ik naar jouw code kijk. De structuur is volledig duidelijk en logisch opgezet`
+*   `Het is gelukt om, met behulp van een micro library, JSON data te renderen naar HTML`
+#### RTW
+##### Punten uit de rubric
+*   `Je hebt methodes gecreëerd die clients in staat stelt middels jouw eigen API te communiceren met jouw server. Real time connectiviteit is op een slimme manier opgezet`

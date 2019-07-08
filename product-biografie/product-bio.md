@@ -369,11 +369,11 @@ Achteraf heb ik gelukkig wel mijn leerdoelen kunnen realiseren met veel stress. 
         })    
     }
     ```
-        * `if(href === 'javascript:void(0);')`: Hier word er gekeken of de link bestaat uit `javascript:void(0)` voor het voorkomen van errors
-        * `fetch(href)`: Ophalen van de ejs webpagina uit de server
-        * `removeChilds(container)`: Verwijderd alle contenten uit de body
-        * `container.insertAdjacentHTML('beforeend',body)`: Voegt nieuwe content toe aan de body
-        * `checkWhichPage()`:
+        * >`if(href === 'javascript:void(0);')`: Hier word er gekeken of de link bestaat uit `javascript:void(0)` voor het voorkomen van errors
+        * >`fetch(href)`: Ophalen van de ejs webpagina uit de server
+        * >`removeChilds(container)`: Verwijderd alle contenten uit de body
+        * >`container.insertAdjacentHTML('beforeend',body)`: Voegt nieuwe content toe aan de body
+        * >`checkWhichPage()`:
         Deze functie hieronder bekijkt welke element aanwezig op een pagina. Aan de hand van de aanwezige element word er bepaald op welke website de gebruiker zich bevind, waardoor de juiste functie's worden gestart voor desbetreffende pagina.
     ```javascript
     function checkWhichPage(){

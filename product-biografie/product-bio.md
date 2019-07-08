@@ -369,7 +369,7 @@ Achteraf heb ik gelukkig wel mijn leerdoelen kunnen realiseren met veel stress. 
         })    
     }
     ```
-    *  `if(href === 'javascript:void(0);')`: Hier word er gekeken of de link bestaat uit `javascript:void(0)` voor het voorkomen van errors
+        *  `if(href === 'javascript:void(0);')`: Hier word er gekeken of de link bestaat uit `javascript:void(0)` voor het voorkomen van errors
     *  `fetch(href)`: Ophalen van de ejs webpagina uit de server
     *  `removeChilds(container)`: Verwijderd alle contenten uit de body
     *  `container.insertAdjacentHTML('beforeend',body)`: Voegt nieuwe content toe aan de body

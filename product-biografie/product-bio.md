@@ -346,28 +346,29 @@ Om al de punten hierboven te realiseren is het van uiterst belang dat ik de mapp
 ###### Mappen indeling JS
 * :open_file_folder: js:
 _Hier staan alle javascript files geladen die vanaf de login pagina al worden ingeladen_
-    * :page_facing_up: [main.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/index.ejs)
-    * :page_facing_up: [resize.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
-    * :page_facing_up: [utils.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
-    * :page_facing_up: [socket.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/login.ejs)
+    * :page_facing_up: [main.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/main.js)
+    * :page_facing_up: [resize.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/resize.js)
+    * :page_facing_up: [utils.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/utils.js)
+    * :page_facing_up: [socket.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/socket.js)
     * :open_file_folder: pages:
     _Hier staan alle javascript files geladen voor specifike webpagina's binnen de index.html pagina(deze webpaginas worden ingeladen zonder de pagina te laden)_
-        * :page_facing_up: [artistPage.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist.ejs)
-        * :page_facing_up: [homepage.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/following.ejs)
-        * :page_facing_up: [search.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/followingList.ejs)
+        * :page_facing_up: [artistPage.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/artistPage.js)
+        * :page_facing_up: [homepage.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/homepage.js)
+        * :page_facing_up: [search.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/search.js)
             * :open_file_folder: error-preventing:
             _Hier staan de error preventing files in_
-                * :page_facing_up: [preventError.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _Errors voorkomen_
+                * :page_facing_up: [preventError.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/error-preventing/preventError.js): _Errors voorkomen_
             * :open_file_folder: page-operators:
             _Hier staan alle pagina operatoren files in. Wanneer den gebruiker van pagina veranderd worden er allerlei functie's gestart die staan dus in files hieronder_
-                * :page_facing_up: [feeds.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _Posts van artiesten activeren (iframes maken)_
-                * :page_facing_up: [fetchHTML.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/filter.ejs): _Webpagina's opvragen en inladen_
-                * :page_facing_up: [switchingPages.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs): _Wanneer er van pagina word geswitched, word er gekeken op welke pagina de gebruiker zich bevind zodat de juiste functie's worden gestart_
+                * :page_facing_up: [feeds.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-operators/feed.js): _Posts van artiesten activeren (iframes maken)_
+                * :page_facing_up: [fetchHTML.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-operators/fetchHTML.js): _Webpagina's opvragen en inladen_
+                * :page_facing_up: [switchingPages.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-operators/switchingPage.js): _Wanneer er van pagina word geswitched, word er gekeken op welke pagina de gebruiker zich bevind zodat de juiste functie's worden gestart_
             * :open_file_folder: page-parts: _Hier staan de elementen die op elke pagina worden geladen_
-                * :page_facing_up: [navigation.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/related.ejs): _navigatie onderin de pagina na de inlog scherm_
+                * :page_facing_up: [navigation.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-parts/navigation.js): _navigatie onderin de pagina na de inlog scherm_
+                * :page_facing_up: [filter.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-parts/filter.js): _filter functinoaliteiten_
             * :open_file_folder: page-states: 
             _Hier staan de pagina states in_
-                * :page_facing_up: [states.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/views/partials/artist-partials/feeds.ejs): _huidige staat van de webpagina en vorige staat om de gebruiker de optie te geven om een pagina terug te gaan_
+                * :page_facing_up: [states.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-states/states.js): _huidige staat van de webpagina en vorige staat om de gebruiker de optie te geven om een pagina terug te gaan_
 
 ## Zelfreflectie
 
@@ -492,6 +493,8 @@ Deze functie hieronder bekijkt welke element aanwezig op een pagina. Aan de hand
     * [Klik hier voor de ejs mappenstructuur en link naar de ejs files](#ejs)
     * [Klik hier voor de js mappenstructuur en link naar de js files](#Mappen-indeling-JS)
 *   `Het is gelukt om, met behulp van een micro library, JSON data te renderen naar HTML`
+    * De JSON data word allemaal gerenderd in de server. De template engine dat hiervoor werd gebruikt is EJS. Zoals ik al eerder heb vermeld worden de verschillende routes opgevraagd door de client, waardoor we html data kunnen inladen de webpagina te herlanden. Deze routes hebben allemaal hun eigen geformateerde data, zodat deze data correct worden omgezet tot elementen door ejs.
+    * [Klik hier de route file source code](https://github.com/LaupWing/Linernote_finalV2/blob/master/server/routes.js) 
 #### RTW
 ##### Punten uit de rubric
 *   `Je hebt methodes gecreëerd die clients in staat stelt middels jouw eigen API te communiceren met jouw server. Real time connectiviteit is op een slimme manier opgezet`

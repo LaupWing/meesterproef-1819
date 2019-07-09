@@ -109,7 +109,13 @@ Voor de werking van het product hebben wij de volgende keuzes gemaakt:
 - `Single page application` & `PWA` -> Het eindproduct is een single page-, progressive web application. Dit zorgde ervoor dat de transitie's tussen verschillende pagina's soepeler ging. Waardoor de website een meer app-like gevoel kreeg, want de opdrachtgever wou er uiteindelijk een App van maken.
 
 ### Styling product
-Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project. Maar aan de hand van onze feedback is er door de opdrachtgever wel door het proces heen verandering aangebracht op het styling van het product. Deze kan je hieronder vinden van oudste versie naar de final versie met uitleg erbij waarom deze keuze gemaakt werd.
+Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project. Maar aan de hand van onze feedback is er door de opdrachtgever wel door het proces heen verandering aangebracht op het styling van het product. 
+**Afbeelding helaas niet aanwezig**
+Week 1: Design met iframes en reactie plaatsen op platform zelf
+Week 2: Design met iframes met reactie en liken binnen Linernote app zelf
+Week 3: Geen veranderingen
+Week 4: Design met alleen iframe en platform logo rechtsboven 
+
 
 ### Database
 

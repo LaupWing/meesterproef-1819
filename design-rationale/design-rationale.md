@@ -110,11 +110,14 @@ Voor de werking van het product hebben wij de volgende keuzes gemaakt:
 
 ### Styling product
 Voor de styling van het product hadden geen invloed, omdat de opdrachtgever alle styling deed en graag een 1 op 1 kopie van zijn styling wou hebben. Dus wij konden nauwelijks styling keuzes uitoefenen op dit project. Maar aan de hand van onze feedback is er door de opdrachtgever wel door het proces heen verandering aangebracht op het styling van het product. 
-**Afbeelding helaas niet aanwezig**
-Week 1: Design met iframes en reactie plaatsen op platform zelf
-Week 2: Design met iframes met reactie en liken binnen Linernote app zelf
-Week 3: Geen veranderingen
-Week 4: Design met alleen iframe en platform logo rechtsboven 
+
+1. Week 1: Design met iframes en reactie plaatsen op platform zelf
+2. Week 2: Design met iframes met reactie en liken binnen Linernote app zelf
+<p align="center">
+<img src="images/design_week2.png"/>
+</p>
+3. Week 3: Geen veranderingen
+4. Week 4: Design met alleen iframe en platform logo rechtsboven 
 
 
 ### Database

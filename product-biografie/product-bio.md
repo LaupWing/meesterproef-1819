@@ -363,7 +363,7 @@ _Hier staan alle javascript files geladen die vanaf de login pagina al worden in
                 * :page_facing_up: [feeds.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-operators/feed.js): _Posts van artiesten activeren (iframes maken)_
                 * :page_facing_up: [fetchHTML.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-operators/fetchHTML.js): _Webpagina's opvragen en inladen_
                 * :page_facing_up: [switchingPages.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-operators/switchingPage.js): _Wanneer er van pagina word geswitched, word er gekeken op welke pagina de gebruiker zich bevind zodat de juiste functie's worden gestart_
-            * :open_file_folder: page-parts: _Hier staan de elementen die op elke pagina worden geladen_
+            * :open_file_folder: page-parts: _Hier staan de elementen die op meerder pagina's worden geladen_
                 * :page_facing_up: [navigation.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-parts/navigation.js): _navigatie onderin de pagina na de inlog scherm_
                 * :page_facing_up: [filter.js](https://github.com/LaupWing/Linernote_finalV2/blob/master/static/js/pages/page-parts/filter.js): _filter functinoaliteiten_
             * :open_file_folder: page-states: 
